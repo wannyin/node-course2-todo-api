@@ -8,14 +8,17 @@
 
 
 
-// const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
-// // jwt.sign
-// // jwt.verify
+// jwt.sign
+// jwt.verify
 
-// var data = {id:10};
-// var token = jwt.sign(data, '123');
-// // console.log(token);
+var data = {id:10};
+var token = jwt.sign(data, '123');
+console.log(token);
+
+var token2 = jwt.sign(data, '123');
+console.log(token2);
 
 // var decode = jwt.verify(token, '123');
 // console.log(decode);
